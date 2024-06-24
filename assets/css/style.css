@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 a {
     text-decoration: none;
@@ -45,7 +46,7 @@ nav {
     font-family: var(--paragraph-font);
 }
 
-main {
+.home {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -212,4 +213,42 @@ main {
     fill: #fffdef;
   }
   
+.about {
+  min-height: 80vh;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.about h1 {
+  font-size: 2rem;
+  font-family: var(--title-font);
+  margin-bottom: 1rem;
+}
 
+.desc {
+  max-width: 900px;
+  min-height: 70vh;
+  background: linear-gradient(rgba(65, 64, 64, 0.3),rgba(65, 64, 64, 0.3));
+  display: flex;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0 0 4px #4f5050,
+  0 0 5px #4f5050,
+  0 0 6px #4f5050,
+  0 0 8px #4f5050;
+}
+.left {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.right img {
+  width: 250px;
+}
